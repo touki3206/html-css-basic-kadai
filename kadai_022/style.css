@@ -1,0 +1,95 @@
+h1 {      
+  margin: 0px;
+  color: rgb(255,255,255);
+}
+
+p {      
+  margin: 0px;
+  font-size: 20px;
+}
+
+body {      
+  margin: 0px;
+}
+
+header{
+  margin-bottom: 20px;
+  background-color: rgb(244,79,79);
+}
+
+a {
+  font-size: 20px;
+}
+
+main {
+  margin: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contents {
+  border: solid 3px rgb(238, 204, 204);
+  flex-basis: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+p:nth-child(3)::first-letter{
+  font: bold;
+  color: rgb(97, 206, 249);
+}
+
+img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+footer{
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+a{
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(193, 234, 251);
+}
+
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+
+}
+
+p {
+    font-size: 25px;
+}
+
+  #parent {
+    flex-direction: column;
+  }
+}
